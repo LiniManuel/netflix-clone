@@ -1,0 +1,76 @@
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: transparent;
+  transition: all ease 0.5s;
+}
+
+header.black {
+  background: #141414;
+}
+
+header nav ul {
+  margin-right: 400px;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 25px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.userIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+}
+
+.userIcon img {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.userIcon .search {
+  margin-right: 30px;
+}
+
+.userIcon .child,
+.gift,
+.notification {
+  margin-right: 20px;
+}
+
+.userIcon .child {
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    display: none;
+  }
+
+  .userIcon .child,
+  .search,
+  .notification,
+  .gift {
+    display: none;
+  }
+}
