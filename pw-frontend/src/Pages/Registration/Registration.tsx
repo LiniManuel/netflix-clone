@@ -42,10 +42,16 @@ export const RegistrationPage = () => {
     <div className="login">
       <Flex
         minH={"100vh"}
+        minW={"100vw"}
         align={"center"}
         justify={"center"}
         bg="rgba(0,0,0,.75)"
+        flexDirection="column"
       >
+        <img
+          src="/images/Logonetflix.png"
+          style={{ width: "160px", height: "45px", justifyContent: "flex-end" }}
+        ></img>
         <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
           <Box
             rounded={"lg"}

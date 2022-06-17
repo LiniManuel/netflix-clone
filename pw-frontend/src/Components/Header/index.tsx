@@ -1,5 +1,16 @@
+import {
+  Avatar,
+  Box,
+  Button,
+  Flex,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Stack,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React, { ReactElement } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { removeTokenCookies } from "../../utils/authCookies";
 import "./styles.css";
@@ -29,14 +40,28 @@ const Header = ({ black }: Props): ReactElement => {
           <li>La mia lista</li>
         </ul>
       </nav>
-      <div className="userIcon">
-        <img src="https://i.pinimg.com/originals/b6/77/cd/b677cd1cde292f261166533d6fe75872.png" />
-        <IoIosArrowDown
-          onClick={Logout}
-          cursor="pointer"
-          style={{ marginLeft: "10px" }}
-        />
-      </div>
+      <Flex alignItems={"center"}>
+        <Menu>
+          <MenuButton
+            as={Button}
+            rounded={"full"}
+            variant={"link"}
+            cursor={"pointer"}
+            backgroudColor="black"
+            minW={0}
+          >
+            <Avatar
+              size={"sm"}
+              src={
+                "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
+              }
+            />
+          </MenuButton>
+          <MenuList flexDirection="row">
+            <MenuItem onClick={Logout}>Logout</MenuItem>
+          </MenuList>
+        </Menu>
+      </Flex>
     </header>
   );
 };

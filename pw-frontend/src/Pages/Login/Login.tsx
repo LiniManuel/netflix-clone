@@ -54,18 +54,22 @@ export const LoginPage = () => {
         bg="rgba(0,0,0,.75)"
         flexDirection="column"
       >
+        <img
+          src="/images/Logonetflix.png"
+          style={{ width: "160px", height: "45px", justifyContent: "flex-end" }}
+        ></img>
         <Stack
           spacing={8}
           mx={"auto"}
           maxW={"lg"}
           py={12}
           px={6}
-          height="600px"
+          height="570px"
           width="450px"
         >
           <Box
             rounded={"lg"}
-            bg="rgba(0,0,0,.75)"
+            bg="#000000BF"
             boxShadow={"lg"}
             height="100%"
             width="100%"
@@ -131,12 +135,6 @@ export const LoginPage = () => {
                 }}
               >
                 Registrati.
-              </FormLabel>
-            </Stack>
-            <Stack marginTop="10px">
-              <FormLabel color="#8c8c8c" fontSize="13px">
-                Questa pagina è protetta da Google reCAPTCHA per garantire che
-                tu non sia un bot.
               </FormLabel>
             </Stack>
           </Box>

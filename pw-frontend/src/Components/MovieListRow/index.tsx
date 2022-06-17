@@ -37,7 +37,6 @@ const MovieListRow = ({ title, items }: Props): ReactElement => {
           marginLeft: "30px",
           marginBlockStart: "0.83em",
           marginBlockEnd: "0.83em",
-          marginInlineStart: "0px",
           marginInlineEnd: "0px",
           fontWeight: "bold",
         }}
